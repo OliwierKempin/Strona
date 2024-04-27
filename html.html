@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="html.html">Kalkulator BMI</a></li>
+                <li><a href="html2.html">Kalkulator Jednostek</a></li>
+                <li><a href="html3.html">Gra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Kalkulator BMI</h2>
+        <form onsubmit="event.preventDefault(); obliczBMI();">
+            <label for="masa">Masa ciała (kg):</label>
+            <input type="number" id="masa" step="0.1">
+            
+            <label for="wzrost">Wzrost (cm):</label>
+            <input type="number" id="wzrost">
+            
+            <button type="submit">Oblicz BMI</button>
+        </form>
+        
+        <div id="wynik"></div>
+    </div>
+
+    <script src="js.js" defer></script>
+</body>
+</html>

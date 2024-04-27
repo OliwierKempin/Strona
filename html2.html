@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jednostek</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="html.html">Kalkulator BMI</a></li>
+                <li><a href="html2.html">Kalkulator Jednostek</a></li>
+                <li><a href="html3.html">Gra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="z">
+        <h1>Kalkulator Jednostek</h1>
+        <div>
+            <label for="amount">Wartość do przeliczenia:</label>
+            <input type="number" id="amount" min="0" step="any" placeholder="Wprowadź wartość...">
+        </div>
+        <div>
+            <label for="fromUnit">Z:</label>
+            <select id="fromUnit">
+                <option value="m">Metry (m)</option>
+                <option value="km">Kilometry (km)</option>
+                <option value="cm">Centymetry (cm)</option>
+                <option value="ft">Stopy (ft)</option>
+                <option value="mi">Mile (mi)</option>
+            </select>
+        </div>
+        <div>
+            <label for="toUnit">Na:</label>
+            <select id="toUnit">
+                <option value="m">Metry (m)</option>
+                <option value="km">Kilometry (km)</option>
+                <option value="cm">Centymetry (cm)</option>
+                <option value="ft">Stopy (ft)</option>
+                <option value="mi">Mile (mi)</option>
+            </select>
+        </div>
+        <button onclick="convertUnits()">Przelicz</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="js2.js"></script>
+</body>
+</html>
